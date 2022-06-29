@@ -1,8 +1,8 @@
-import User from "../model/User.js";
+import uau from "../model/User.js";
 
-const Signup = async (request, response)=>{
+const signup = async (request, response)=>{
     const {nome, email, password} = request.body;
-    const user = new User({
+    const user = new aua({
       name : nome,
       email: email,
       password: password
@@ -21,5 +21,5 @@ const Signup = async (request, response)=>{
 }
 
 export {
-  Signup
+  signup
 }
